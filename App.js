@@ -7,6 +7,7 @@ import PessoaAddTela from './screens/PessoaAddTela';
 import PessoaListTela from './screens/PessoaListTela';
 
 const Stack = createNativeStackNavigator();
+
 export default function App() {
   return (
     <NavigationContainer>
@@ -16,14 +17,8 @@ export default function App() {
       <Stack.Navigator initialRouteName='PessoaAdd'>
         {/** Stack.Navigator usa a navegacao baseada em pilha */}
         {/**  Stack.Screen mapeia uma tela com um nome e qual componente deve ser exibibdo */}
-        <Stack.Screen
-          name='PessoaAdd'
-          component={<PessoaAddTela></PessoaAddTela>}
-        />
-        <Stack.Screen
-          name='PessoaList'
-          component={<PessoaListTela></PessoaListTela>}
-        />
+        <Stack.Screen name='PessoaAdd' component={PessoaAddTela} />
+        <Stack.Screen name='PessoaList' component={PessoaListTela} />
       </Stack.Navigator>
     </NavigationContainer>
   );
