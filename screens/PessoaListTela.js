@@ -1,12 +1,9 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
 import React from 'react';
+import PessoaListComponent from '../components/PessoaListComponent';
 
-const PessoaListTela = () => {
-  return (
-    <View>
-      <Text>PessoaListTela</Text>
-    </View>
-  );
+const PessoaListTela = ({ navigation }) => {
+  return <PessoaListComponent navigation={navigation} />;
 };
 
 export default PessoaListTela;

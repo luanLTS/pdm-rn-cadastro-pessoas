@@ -14,7 +14,7 @@ export default function App() {
       {/** NavigationContainer responsavel por mapear o estado de navegação do app e fazer os links entre telas
        * Interage com o SO
        */}
-      <Stack.Navigator initialRouteName='PessoaAdd'>
+      <Stack.Navigator initialRouteName='PessoaList'>
         {/** Stack.Navigator usa a navegacao baseada em pilha */}
         {/**  Stack.Screen mapeia uma tela com um nome e qual componente deve ser exibibdo */}
         <Stack.Screen name='PessoaAdd' component={PessoaAddTela} />
